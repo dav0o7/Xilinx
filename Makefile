@@ -49,7 +49,9 @@ BinaryTree : STL/obj/BinaryTree.o STL/obj/BinaryTree_main.o
 STL : $(STL_OBJ)
 	@echo building $@
 	@mkdir -p STL/bin
-	@g++ $^ -o STL/bin/$@
+	@make vector
+	@make list
+	@make BinaryTree
 	@echo Done...
 
 Integer : Type/obj/Integer.o

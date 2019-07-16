@@ -9,14 +9,14 @@ private:
 
 public:
 	listMember();
-	listMember(type value);
-	listMember(type value, listMember* prev, listMember* next);
+	listMember(type );
+	listMember(type , listMember*, listMember*);
 	type getValue();
 	listMember* getPrev();
 	listMember* getNext();
-	void setValue(type value);
-	void setPrev(listMember* lis);
-	void setNext(listMember* lis);
+	void setValue(type);
+	void setPrev(listMember*);
+	void setNext(listMember*);
 };
 
 class list {
@@ -25,12 +25,12 @@ private:
 	int size;
 public:
 	list();
-	list(int size);
+	list(int);
 	int getsize();
-	void add(type value);
-	void change(int index, type value);
-	int find(type value);
-	void remove (int index);
+	void add(type);
+	void change(int, type);
+	int find(type);
+	void remove (int);
 	void print();
 };	
 

@@ -7,13 +7,13 @@ private:
 	type* vec;
 public:
 	vector();
-	vector(int size);
+	vector(int);
 	int getsize();
-	void push_back(type value);
+	void push_back(type);
 	void pop_back();
-	void add(int index, type value);
-	void remove(int index);
-	int find(type value);
-	void change(int index, type value);
+	void add(int, type);
+	void remove(int);
+	int find(type);
+	void change(int, type);
 	void print();
 };

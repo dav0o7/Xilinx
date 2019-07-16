@@ -9,13 +9,13 @@ private:
 public:
 
 	BTNode();
-	BTNode(type data, BTNode* Left, BTNode* Right);
+	BTNode(type, BTNode*, BTNode*);
 	BTNode* get_left();
 	BTNode* get_right();
 	type get_data(); 
-	void set_left(BTNode* node);
-	void set_right(BTNode* node);
-	void set_data(type value); 
+	void set_left(BTNode*);
+	void set_right(BTNode*);
+	void set_data(type); 
 };
 
 class BinaryTree {
@@ -25,12 +25,12 @@ private:
 public:
 
 	BinaryTree();
-	BinaryTree(int size);
-	type getValue(int index);
-	BTNode* add (type value);
-	BTNode* find(type value);
-	BTNode* change_val(type value, type to);
-	BTNode* change_ind(int index, type to);
-	BTNode* remove(type value);
+	BinaryTree(int);
+	type getValue(int);
+	BTNode* add (type);
+	BTNode* find(type);
+	BTNode* change_val(type, type);
+	BTNode* change_ind(int, type);
+	BTNode* remove(type);
 };
 
